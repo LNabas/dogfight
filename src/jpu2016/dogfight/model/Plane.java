@@ -15,6 +15,7 @@ public class Plane extends Mobile{
 		return this.player==player;
 	}
 	public boolean hit(){
-		return false;
+		// NOTE(doc): can be hit
+		return true;
 	}
 }

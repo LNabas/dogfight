@@ -18,80 +18,55 @@ public class Mobile implements IMobile{
 		// TODO(doc): image
 		//this.image = image;
 	}
-	@Override
 	public Direction getDirection() {
 		return direction;
 	}
-	@Override
 	public void setDirection(Direction direction) {
 		this.direction=direction;
 	}
-
-	@Override
 	public Point getPosition() {
-		return null;
+		Point p = new Point();
+		p.setLocation(position.getX(), position.getY());
+		return p;
 	}
-
-	@Override
 	public Dimension getDimension() {
 		return dimension;
 	}
-	
-	@Override
 	public int getWidth() {
 		return dimension.getWidth();
 	}
-	@Override
 	public int getHeight() {
 		return dimension.getHeight();
 	}
-
-	@Override
 	public int getSpeed() {
 		return speed;
 	}
-
-	@Override
 	public Image getImage() {
 		return image;
 	}
-
-	@Override
 	public void move() {
 		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
 	public void placeInArea(IArea area) {
 		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
 	public boolean isPlayer(int player) {
 		// TODO Auto-generated method stub
 		return false;
 	}
-
-	@Override
 	public void setDogfightModel(DogfightModel dogfightmodel) {
 		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
 	public boolean hit() {
-		// TODO Auto-generated method stub
+		// NOTE(doc): can't be killed
 		return false;
 	}
-
-	@Override
 	public boolean isWeapon() {
-		// TODO Auto-generated method stub
 		return false;
 	}
-	
 	private void moveUp(){
 		
 	}
@@ -104,16 +79,13 @@ public class Mobile implements IMobile{
 	private void moveLeft(){
 		
 	}
-	
 	public Color getColor(){
 		return null;
 	}
-	
 	public IDogfightModel getDogfightModel(){
 		return null;
 	}
 	public void setDogfightModel(IDogfightModel dogfightmodel){
 		
 	}
-
 }

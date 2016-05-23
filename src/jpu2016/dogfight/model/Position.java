@@ -14,20 +14,17 @@ public class Position {
 	public Position(Position position){
 		this.x=position.getX();
 		this.y=position.getX();
-		// TODO(doc): test this -> will crash
 		this.maxX=position.maxX;
 		this.maxY=position.maxY;
 	}
-	public double getX() {
-		return x;
-	}
 	public void setX(double x) {
+		x%=maxX;
+		if(x<0)x=maxX;
 		this.x = x;
 	}
-	public double getY() {
-		return y;
-	}
 	public void setY(double y) {
+		y%=maxY;
+		if(y<0)y=maxY;
 		this.y = y;
 	}
 	protected void setMaxX(double maxX){
@@ -35,5 +32,11 @@ public class Position {
 	}
 	protected void setMaxY(double maxY){
 		this.maxY=maxY;
+	}
+	public double getX() {
+		return x;
+	}
+	public double getY() {
+		return y;
 	}
 }

@@ -21,6 +21,7 @@ public class Missile extends Mobile{
 	public void move(){
 		if(distanceTraveled<MAX_DISTANCE_TRAVELED){
 			// TODO(doc): move it (direction, speed)
+			
 		}
 		
 	}
