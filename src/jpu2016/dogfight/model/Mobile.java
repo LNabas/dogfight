@@ -5,8 +5,10 @@ import java.awt.Image;
 import java.awt.Point;
 
 public class Mobile implements IMobile{
+	private int speed;
 	public Mobile(Direction direction, Position position, Dimension dimension, int speed, String image){
-		
+		this.speed=speed;
+		// TODO(doc):
 	}
 	@Override
 	public Direction getDirection() {

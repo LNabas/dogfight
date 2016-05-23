@@ -6,10 +6,11 @@ public class Plane {
 	private int HEIGHT = 30;
 	private int player;
 	public Plane(int player, Direction direction, Position position, String image){
-		
+		this.player=player;
+		// TODO(doc): direction, position, image
 	}
 	public boolean isPlayer(int player){
-		return false;
+		return this.player==player;
 	}
 	public boolean hit(){
 		return false;
