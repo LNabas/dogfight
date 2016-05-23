@@ -1,5 +1,5 @@
 package dogfight1;
 
-public interface IArea {
+public class IArea {
 
 }
