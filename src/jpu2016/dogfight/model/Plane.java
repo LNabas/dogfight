@@ -1,7 +1,5 @@
 package jpu2016.dogfight.model;
 
-import javax.swing.text.Position;
-
 public class Plane {
 	private int SPEED = 2;
 	private int WIDTH = 100;
