@@ -1,5 +1,43 @@
 package jpu2016.dogfight.view;
 
-public class GraphicsBuilder {
+import java.awt.Graphics;
+import java.awt.image.ImageObserver;
 
+import jpu2016.dogfight.controller.UserOrder;
+import jpu2016.dogfight.model.IDogfightModel;
+import jpu2016.dogfight.model.IMobile;
+
+public class GraphicsBuilder 
+{
+	public GraphicsBuilder(IDogfightModel dogfightModel)
+	{
+		
+	}
+	
+	public void applyModelToGraphic(Graphics graphics, ImageObserver observer)
+	{
+		
+	}
+	
+	private void buildEmptySky()
+	{
+		
+	}
+	
+	private void drawMobile(IMobile mobile, Graphics graphics, ImageObserver observer)
+	{
+		
+	}
+	
+	public int getGlobalWidth()
+	{
+		return 0;
+		
+	}
+	
+	public int getGlobalHeight()
+	{
+		return 0;
+		
+	}
 }
