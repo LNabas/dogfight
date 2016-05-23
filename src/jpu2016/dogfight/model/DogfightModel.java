@@ -2,7 +2,7 @@ package jpu2016.dogfight.model;
 
 import java.util.ArrayList;
 
-public class DoghtfightModel implements IDogfightModel{
+public class DogfightModel implements IDogfightModel{
 
 	@Override
 	public IArea getArea() {
