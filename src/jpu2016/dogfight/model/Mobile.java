@@ -6,56 +6,54 @@ import java.awt.Point;
 
 public class Mobile implements IMobile{
 	private int speed;
+	private Direction direction;
+	private Dimension dimension;
+	private Position position;
+	private Image image;
 	public Mobile(Direction direction, Position position, Dimension dimension, int speed, String image){
 		this.speed=speed;
-		// TODO(doc):
+		this.direction=direction;
+		this.position=position;
+		this.dimension=dimension;
+		// TODO(doc): image
+		//this.image = image;
 	}
 	@Override
 	public Direction getDirection() {
-		// TODO Auto-generated method stub
-		return null;
+		return direction;
 	}
-
 	@Override
 	public void setDirection(Direction direction) {
-		// TODO Auto-generated method stub
-		
+		this.direction=direction;
 	}
 
 	@Override
 	public Point getPosition() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Dimension getDimension() {
-		// TODO Auto-generated method stub
-		return null;
+		return dimension;
 	}
-
+	
 	@Override
 	public int getWidth() {
-		// TODO Auto-generated method stub
-		return 0;
+		return dimension.getWidth();
 	}
-
 	@Override
 	public int getHeight() {
-		// TODO Auto-generated method stub
-		return 0;
+		return dimension.getHeight();
 	}
 
 	@Override
 	public int getSpeed() {
-		// TODO Auto-generated method stub
-		return 0;
+		return speed;
 	}
 
 	@Override
 	public Image getImage() {
-		// TODO Auto-generated method stub
-		return null;
+		return image;
 	}
 
 	@Override
@@ -93,6 +91,7 @@ public class Mobile implements IMobile{
 		// TODO Auto-generated method stub
 		return false;
 	}
+	
 	private void moveUp(){
 		
 	}
@@ -105,6 +104,7 @@ public class Mobile implements IMobile{
 	private void moveLeft(){
 		
 	}
+	
 	public Color getColor(){
 		return null;
 	}

@@ -1,9 +1,16 @@
 package jpu2016.dogfight.model;
 
 import java.util.ArrayList;
+import java.util.Observable;
 
-public class DogfightModel implements IDogfightModel{
+// NOTE(doc): big sky wawa luw fluffy
 
+public class DogfightModel extends Observable implements IDogfightModel{
+	private Sky sky;
+	private ArrayList<IMobile> mobiles;
+	public DogfightModel(){
+		//sky= new Sky();
+	}
 	@Override
 	public IArea getArea() {
 		// TODO Auto-generated method stub
@@ -12,26 +19,23 @@ public class DogfightModel implements IDogfightModel{
 
 	@Override
 	public void buildArea(Dimension dimension) {
-		// TODO Auto-generated method stub
+		sky = new Sky(dimension);
 		
 	}
 
 	@Override
 	public void addMobile(IMobile Mobile) {
-		// TODO Auto-generated method stub
-		
+		mobiles.add(Mobile);
 	}
 
 	@Override
 	public void removeMobile(IMobile Mobile) {
-		// TODO Auto-generated method stub
-		
+		mobiles.remove(Mobile);
 	}
 
 	@Override
 	public ArrayList<IMobile> getMobiles() {
-		// TODO Auto-generated method stub
-		return null;
+		return mobiles;
 	}
 
 	@Override
