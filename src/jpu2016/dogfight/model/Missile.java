@@ -19,11 +19,13 @@ public class Missile extends Mobile{
 		return HEIGHT;
 	}
 	public void move(){
-		// TODO(doc):
+		if(distanceTraveled<MAX_DISTANCE_TRAVELED){
+			// TODO(doc): move it (direction, speed)
+		}
 		
 	}
 	public boolean isWeapon(){
-		// TODO(doc): BOOM !!!
+		// NOTE(doc): BOOM !!!
 		return true; 
 	}
 }
