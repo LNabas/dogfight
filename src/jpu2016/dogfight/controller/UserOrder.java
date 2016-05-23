@@ -4,6 +4,16 @@ public class UserOrder implements IUserOrder
 {
 	private int player;
 	private Order order;
+	
+	public void player()
+	{
+		
+	}
+	
+	public void order()
+	{
+		
+	}
 
 	public Order getOrder() {
 		return order;
