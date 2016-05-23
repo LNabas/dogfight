@@ -1,4 +1,4 @@
-package jpu2016.dogfight.model;
+package dogfight1;
 
 public interface IArea {
 
