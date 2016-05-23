@@ -6,6 +6,8 @@ public class Cloud {
 	private int HEIGHT = 150;
 	private String IMAGE = "cloud";
 	public Cloud(Direction direction,Dimension dimension){
-		
+		WIDTH=dimension.getWidth();
+		HEIGHT=dimension.getHeight();
+		// TODO(doc): do something with direction ?
 	}
 }

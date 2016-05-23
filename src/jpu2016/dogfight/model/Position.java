@@ -6,10 +6,17 @@ public class Position {
 	private double maxX;
 	private double maxY;
 	public Position(double x, double y, double maxX, double maxY){
-		
+		this.x=x;
+		this.y=y;
+		this.maxX=maxX;
+		this.maxY=maxY;
 	}
 	public Position(Position position){
-		
+		this.x=position.getX();
+		this.y=position.getX();
+		// TODO(doc): test this -> will crash
+		this.maxX=position.maxX;
+		this.maxY=position.maxY;
 	}
 	public double getX() {
 		return x;
