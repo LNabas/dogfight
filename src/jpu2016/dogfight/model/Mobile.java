@@ -10,6 +10,7 @@ public class Mobile implements IMobile{
 	private Dimension dimension;
 	private Position position;
 	private Image image;
+	private IDogfightModel dogfightmodel;
 	public Mobile(Direction direction, Position position, Dimension dimension, int speed, String image){
 		this.speed=speed;
 		this.direction=direction;
@@ -46,19 +47,13 @@ public class Mobile implements IMobile{
 	}
 	public void move() {
 		// TODO Auto-generated method stub
-		
 	}
 	public void placeInArea(IArea area) {
 		// TODO Auto-generated method stub
-		
 	}
 	public boolean isPlayer(int player) {
 		// TODO Auto-generated method stub
 		return false;
-	}
-	public void setDogfightModel(DogfightModel dogfightmodel) {
-		// TODO Auto-generated method stub
-		
 	}
 	public boolean hit() {
 		// NOTE(doc): can't be killed
@@ -80,12 +75,13 @@ public class Mobile implements IMobile{
 		position.setX(position.getX()-1);
 	}
 	public Color getColor(){
+		// TODO(doc): where to get that thing ?
 		return null;
 	}
 	public IDogfightModel getDogfightModel(){
-		return null;
+		return dogfightmodel;
 	}
 	public void setDogfightModel(IDogfightModel dogfightmodel){
-		
+		this.dogfightmodel=dogfightmodel;
 	}
 }

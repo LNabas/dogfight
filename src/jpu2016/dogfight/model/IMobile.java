@@ -15,7 +15,7 @@ public interface IMobile {
 	public void move();
 	public void placeInArea(IArea area);
 	public boolean isPlayer(int player);
-	public void setDogfightModel(DogfightModel dogfightmodel);
+	public void setDogfightModel(IDogfightModel dogfightmodel);
 	public boolean hit();
 	public boolean isWeapon();
 }
