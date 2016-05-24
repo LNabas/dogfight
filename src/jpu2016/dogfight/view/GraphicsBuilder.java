@@ -2,12 +2,12 @@ package jpu2016.dogfight.view;
 
 import java.awt.Graphics;
 import java.awt.image.ImageObserver;
-
+import jpu2016.gameframe.IGraphicsBuilder;
 import jpu2016.dogfight.controller.UserOrder;
 import jpu2016.dogfight.model.IDogfightModel;
 import jpu2016.dogfight.model.IMobile;
 
-public class GraphicsBuilder 
+public class GraphicsBuilder implements IGraphicsBuilder
 {
 	public GraphicsBuilder(IDogfightModel dogfightModel)
 	{
@@ -31,13 +31,13 @@ public class GraphicsBuilder
 	
 	public int getGlobalWidth()
 	{
-		return 0;
+		return 1;
 		
 	}
 	
 	public int getGlobalHeight()
 	{
-		return 0;
+		return 1;
 		
 	}
 }
