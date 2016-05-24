@@ -2,8 +2,11 @@ package jpu2016.gameframe;
 
 import java.awt.Graphics;
 import java.util.Observable;
+import java.util.Observer;
 
-public class GamePanel 
+import javax.swing.JPanel;
+
+public class GamePanel extends JPanel implements Observer
 {
 	public GamePanel(IGraphicsBuilder graphicBuilder)
 	{
@@ -17,6 +20,11 @@ public class GamePanel
 	
 	public void paintComponent(Graphics graphic)
 	{
+		
+	}
+
+	public void update(Observable arg0, Object arg1) {
+		// TODO Auto-generated method stub
 		
 	}
 }

@@ -9,6 +9,8 @@ import jpu2016.dogfight.model.IMobile;
 
 public class GraphicsBuilder implements IGraphicsBuilder
 {
+	private int GlobalWidth;
+	private int GlobalHeight;
 	public GraphicsBuilder(IDogfightModel dogfightModel)
 	{
 		
@@ -31,13 +33,13 @@ public class GraphicsBuilder implements IGraphicsBuilder
 	
 	public int getGlobalWidth()
 	{
-		return 1;
+		return GlobalWidth;
 		
 	}
 	
 	public int getGlobalHeight()
 	{
-		return 1;
+		return GlobalHeight;
 		
 	}
 
