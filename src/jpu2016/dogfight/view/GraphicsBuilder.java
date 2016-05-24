@@ -40,4 +40,16 @@ public class GraphicsBuilder implements IGraphicsBuilder
 		return 1;
 		
 	}
+
+	@Override
+	public int getWidth() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getHeight() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
