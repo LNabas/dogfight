@@ -41,15 +41,15 @@ public class GraphicsBuilder implements IGraphicsBuilder
 		
 	}
 
-	@Override
 	public int getWidth() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
-	@Override
 	public int getHeight() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
+
 }
