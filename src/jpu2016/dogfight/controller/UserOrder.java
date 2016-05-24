@@ -5,13 +5,10 @@ public class UserOrder implements IUserOrder
 	private int player;
 	private Order order;
 	
-	public void player()
+	public UserOrder(int player, Order order)
 	{
-		
-	}
-	
-	public void order()
-	{
+		this.player= player;
+		this.order= order;
 		
 	}
 
