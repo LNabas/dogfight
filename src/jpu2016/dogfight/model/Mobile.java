@@ -68,16 +68,16 @@ public class Mobile implements IMobile{
 		return false;
 	}
 	private void moveUp(){
-		
-	}
-	private void moveRight(){
-		
+		position.setY(position.getY()-1);
 	}
 	private void moveDown(){
-		
+		position.setY(position.getY()+1);
+	}
+	private void moveRight(){
+		position.setX(position.getX()+1);
 	}
 	private void moveLeft(){
-		
+		position.setX(position.getX()-1);
 	}
 	public Color getColor(){
 		return null;
