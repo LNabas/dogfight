@@ -12,8 +12,7 @@ public class DogfightModel extends Observable implements IDogfightModel{
 		//sky= new Sky();
 	}
 	public IArea getArea() {
-		// TODO Auto-generated method stub
-		return null;
+		return sky;
 	}
 	public void buildArea(Dimension dimension) {
 		sky = new Sky(dimension);
@@ -38,7 +37,8 @@ public class DogfightModel extends Observable implements IDogfightModel{
 	}
 	public void setMobileHasMoved() {
 		// TODO Auto-generated method stub
-		
+		this.hasChanged();
+		this.notifyObservers();
 	}
 
 }
