@@ -13,6 +13,6 @@ public interface IDogfightModel {
 	
 	public ArrayList<IMobile> getMobiles();
 	public IMobile getMobileByPlayer(int player);
-	public void setMobileHavesMoved();
+	public void setMobileHasMoved();
 	
 }
