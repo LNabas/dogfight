@@ -6,8 +6,9 @@ import jpu2016.dogfight.view.DogfightView;
 
 public class dogfight1
 {
-	public static void main()
+	public static void main(String[] args)
 	{
+		System.out.println("Hello, ASS");
 		final DogfightModel dogfightModel = new DogfightModel();
 		final DogfightController dogfightController = new DogfightController(dogfightModel);
 		final DogfightView dogfightView = new DogfightView(dogfightController, dogfightModel,

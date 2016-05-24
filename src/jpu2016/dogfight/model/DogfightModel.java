@@ -36,7 +36,7 @@ public class DogfightModel extends Observable implements IDogfightModel{
 		}
 		return null;
 	}
-	public void setMobileHavesMoved() {
+	public void setMobileHasMoved() {
 		// TODO Auto-generated method stub
 		
 	}
