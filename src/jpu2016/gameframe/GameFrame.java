@@ -11,11 +11,12 @@ public class GameFrame extends JFrame implements KeyListener{
 	{
 	 this.setTitle(title);
 	 this.addKeyListener(this);
+	 this.setSize(graphicBuilder.getGlobalWidth(), graphicBuilder.getGlobalWidth());
 	 this.setVisible(true);
 	}
 	 public void keyPressed(KeyEvent keyEvent)
 	 {
-		 
+		 char ch = keyEvent.getKeyChar();
 	 }
 	 
 	 public void keyReleased(KeyEvent keyEvent)
