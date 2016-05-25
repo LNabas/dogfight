@@ -12,6 +12,7 @@ public class GameFrame extends JFrame implements KeyListener{
 	 this.setTitle(title);
 	 this.addKeyListener(this);
 	 this.setSize(graphicBuilder.getGlobalWidth(), graphicBuilder.getGlobalWidth());
+	 this.setContentPane(new GamePanel(graphicBuilder));
 	 this.setVisible(true);
 	}
 	 public void keyPressed(KeyEvent keyEvent)
@@ -27,7 +28,7 @@ public class GameFrame extends JFrame implements KeyListener{
 	 {
 		 
 	 }
-	public void keyTyped(KeyEvent arg0) {
+	public void keyTyped(KeyEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
